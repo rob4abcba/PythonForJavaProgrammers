@@ -10,7 +10,7 @@
 - if Statement
 - while
 - Boolean result operators
-- Lists
+- [Lists]( )
 - For Loops
 - Assert
 - String Formatting
@@ -178,7 +178,7 @@ and its negation
 x not in collection
 A primary type of collection is discussed next:
 
-Lists
+# Lists
 Lists in Python correspond semantically something somewhere between a Java array and an ArrayList.  They can grow, and they can reference elements like x[i].
 Literals and some basic operations can be stated much more neatly than in Java:
 x = [1, 3, 5]  # a list
