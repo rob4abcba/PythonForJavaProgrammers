@@ -22,11 +22,11 @@
 - List Comprehensions
 - Doctests
 
-Comments
+# Comments
 > "#" starts a Python comment to the end of the line, as 
 > "//" starts one in Java.
 
-Types
+# Types
 Python data is typed
 23 # int
 23.0  # float (Java double)
@@ -45,7 +45,7 @@ x = 1
 x="hello"
 is legal.  There are no type declaratons.  All data in Python are objects.   All assignments implicitly involve pointers, but there is no notation for pointers.  Hence y=x makes y an alias for x.  With mutable objects you get into the same problems with aliases as in Java.  In Python numbers and strings are immutable, so they have no problems with aliases.
 
-String Concatenation
+# String Concatenation
 String concatenation is + as in Java, but Python does not do implict conversions to string type (str).  It must be explicit:
 Java:
 int x = 3
@@ -55,7 +55,7 @@ Python:
 x = 3
 s = "The answer is " + str(x)
 
-Assignments and arithmetic
+# Assignments and arithmetic
 Assignment and most arithmetic operands are like Java.  Python does not have operators  ++ or --.   Python does have the ** exponentiation operator of Basic.   The value of b ** n is bn. 
 
 Unlike Java, there cannot be integer overflow in Python.   (This is very handy when using big numbers for cryptography.)  If an operation creates a number that is too big for normal storage in a machine word, a multword format is implicily created. In versions 2.X of Python the display of integer literals indicates their underlying storage format:  An L for Long appended to an integer stored in multiple words.  (In version 3.X, the L is omitted, as an unnecessary exposure of the implementation.)
@@ -73,7 +73,7 @@ y = temp
 Python swap:  Parentheses around the group of comma separated elements is optional.  The entire right-hand side is evaluated before the assignment is made, as with any assignment. 
   y, x = x, y
 
-Statement syntax
+# Statement syntax
 Line break delimit statements in Python.  Semicolons are only used if you want multiple statements on one line.  
 
 A statement automatically continues over multiple lines until delimiters are matched: (...), [...], or {....}.  Often a naturally long statement without such separated delimiters can have an extra set of parentheses added, allowing the statement to be split up readably on several lines.  If including matching delimiters does not make sense, you can end a line with \
@@ -83,7 +83,7 @@ While blocks in Java are enclosed in braces {...}, blocks in Python always come 
 
 For instance function definitions have a heading and body:
 
-Functions
+# Functions
 Java:
 /** javadoc comments.... */
 public static int square(int x) {
@@ -101,7 +101,7 @@ Note, since Python is not staticly typed, ther is no declared return type (thoug
 
 Instance methods are discussed and illustrated in the sample code files for defining classes, listed under Classes.
 
-Function Signature variations
+# Function Signature variations
 Like Java, Python allows a sequential substitution of actual parameters for formal parameters.  Python does NOT have overloading of method names, but it has a very rich variety of other options for function signatures.  The main feature we will use is keyword parameterswith default values.  You will see these in library functions, so it is good to understand the usage even if you do not write such functions.  Consider the heading of a function definition with keyword parameters:
 def f(x, y, z=0, goSlow=False):
     ...
