@@ -23,8 +23,8 @@
 - Doctests
 
 # Comments
-- "#" starts a Python comment to the end of the line, as 
-- "//" starts one in Java.
+- "#" Python comment 
+- "//" Java comment
 
 # Types
 Python data is typed
